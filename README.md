@@ -23,7 +23,6 @@ The project is split into two complementary experimental setups:
 ![System Signal Flow Diagram](assets/images/signal_flow.png)
 *(Figure showing the sequential flow from LED Transmitters through the Optical Channel, Photodiode Receiver, and Processing Unit to the Positioning Output).*
 
----
 
 ## 3. What Did I Do?
 * Designed and calibrated a complete optical wireless receiver pipeline using an ESP32 microcontroller and a silicon photodiode.
@@ -31,8 +30,6 @@ The project is split into two complementary experimental setups:
 * Developed an analog front-end (AFE) utilizing a Transimpedance Amplifier (TIA) with feedback filtering to condition raw photodiode current into measurable voltage.
 * Implemented real-time digital signal processing (DSP) routines, including a 12-bit ADC sampling pipeline (at $8\,\text{kHz}$) and a 256-point Fast Fourier Transform (FFT) to isolate multi-carrier optical channels.
 * Derived an empirical exponential decay model mapping RSS to distance, achieving a **0.53 m Mean Absolute Error (MAE)** and **0.66 m Root Mean Square Error (RMSE)** in near-field validation.
-
----
 
 ## 4. How Did I Do It? (Implementation & Technical Design)
 
@@ -55,7 +52,6 @@ Photodiodes output a minute current proportional to incident light intensity[cit
 ![Receiver Circuit Schematic](assets/images/receiver_circuit.png)
 *(Schematic of the LM358 operational amplifier configured as a TIA with parallel Rf and Cf feedback).*
 
----
 
 ## 5. Challenges Faced & Engineering Solutions
 1. **Insufficient Optical Intensity:** 
@@ -65,7 +61,6 @@ Photodiodes output a minute current proportional to incident light intensity[cit
    * *Challenge:* Raw photodiode outputs suffered from low signal levels and high-frequency ambient noise interference.
    * *Solution:* Implemented the **LM358-based Transimpedance Amplifier (TIA)** configuration with carefully tuned feedback component values ($R_f = 1\,\text{M}\Omega$ and $C_f = 0.1\,\mu\text{F}$). The op-amp configuration provided the necessary voltage scaling to match the ESP32's $0-3.3\,\text{V}$ ADC range, while the parallel capacitor acted as a low-pass filter to strip out high-frequency noise.
 
----
 
 ## 6. Results & Performance
 
@@ -76,7 +71,6 @@ Photodiodes output a minute current proportional to incident light intensity[cit
 * **Distance Estimation:** Validated across a $0-5\,\text{m}$ range, achieving high accuracy in the near-field region ($0-2\,\text{m}$) with an overall **MAE of $0.53\,\text{m}$** and **RMSE of $0.66\,\text{m}$**.
 * **Transmitter Separation:** Successfully demonstrated simultaneous multi-transmitter discrimination using FFT spectral analysis, proving that frequency-division multiplexing can resolve overlapping optical sources.
 
----
 
 ## 7. Future Areas for Improvement
 * Integrate high-power programmable lighting infrastructure capable of simultaneous wide-area illumination and frequency modulation.
