@@ -1,10 +1,11 @@
-# Visible-Light-Communication-for-Indoor-Positioning
-This project documents a system that uses visible light (LEDs) to determine the position of objects in a large indoor setting.
 ![ESP32](https://img.shields.io/badge/Hardware-ESP32-E7352C?style=flat&logo=espressif&logoColor=white)
 ![C++](https://img.shields.io/badge/Language-C++-00599C?style=flat&logo=c%2B%2B&logoColor=white)
 ![Python](https://img.shields.io/badge/Scripting-Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Signal Processing](https://img.shields.io/badge/Focus-Signal%20Processing%20(FFT)-blue)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
+
+# Visible-Light-Communication-for-Indoor-Positioning
+This project documents a system that uses visible light (LEDs) to determine the position of objects in a large indoor setting.
 
 ## 1. Why Is It Relevant?
 Traditional indoor positioning systems (such as GPS) fail indoors due to severe signal attenuation and building obstruction. While radio frequency (RF) alternatives like Wi-Fi and Bluetooth are common, they suffer from multipath interference, signal noise, and limited spatial resolution. 
