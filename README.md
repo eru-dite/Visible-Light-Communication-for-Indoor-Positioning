@@ -4,6 +4,8 @@
 ![Signal Processing](https://img.shields.io/badge/Focus-Signal%20Processing%20(FFT)-blue)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
+![Project Banner](assets/images/VLC_thumbnail_.png)
+
 # Visible-Light-Communication-for-Indoor-Positioning
 This project documents a system that uses visible light (LEDs) to determine the position of objects in a large indoor setting.
 
