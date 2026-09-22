@@ -47,7 +47,7 @@ Photodiodes output a minute current proportional to incident light intensity[cit
   This low cutoff frequency effectively suppresses high-frequency electronic noise and rapid ambient light fluctuations, ensuring stable, reliable RSS measurements ideal for positioning.
 
 ![Receiver Circuit Schematic](assets/images/receiver_circuit.png)
-*(Schematic of the LM358 operational amplifier configured as a TIA with parallel $R_f$ and $C_f$ feedback).*
+*(Schematic of the LM358 operational amplifier configured as a TIA with parallel Rf and Cf feedback).*
 
 ---
 
