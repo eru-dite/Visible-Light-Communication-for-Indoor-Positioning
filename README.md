@@ -13,7 +13,6 @@ Traditional indoor positioning systems (such as GPS) fail indoors due to severe 
 
 Visible Light Communication (VLC) and Visible Light Positioning (VLP) leverage existing LED lighting infrastructure for simultaneous illumination and data transmission. By utilizing high directivity and shorter wavelengths, VLC offers enhanced spatial resolution, immunity to electromagnetic interference, and secure indoor localization.
 
----
 
 ## 2. System Architecture & Overview
 The project is split into two complementary experimental setups:
