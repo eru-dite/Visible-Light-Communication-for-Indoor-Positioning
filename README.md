@@ -23,7 +23,7 @@ The project is split into two complementary experimental setups:
 * Designed and calibrated a complete optical wireless receiver pipeline using an ESP32 microcontroller and a silicon photodiode.
 * Implemented a **low-side N-channel MOSFET switching circuit** (utilizing an IRL24N MOSFET) driven by ESP32 PWM signals to modulate discrete LED transmitters at specific frequencies.
 * Developed an analog front-end (AFE) utilizing a Transimpedance Amplifier (TIA) with feedback filtering to condition raw photodiode current into measurable voltage.
-* Implemented real-time digital signal processing (DSP) routines, including a 12-bit ADC sampling pipeline (at $8\,\text{kHz}$) and a 256-point Fast Fourier Transform (FFT) to isolate multi-carrier optical channels[cite: 3, 4].
+* Implemented real-time digital signal processing (DSP) routines, including a 12-bit ADC sampling pipeline (at $8\,\text{kHz}$) and a 256-point Fast Fourier Transform (FFT) to isolate multi-carrier optical channels.
 * Derived an empirical exponential decay model mapping RSS to distance, achieving a **0.53 m Mean Absolute Error (MAE)** and **0.66 m Root Mean Square Error (RMSE)** in near-field validation.
 
 ---
